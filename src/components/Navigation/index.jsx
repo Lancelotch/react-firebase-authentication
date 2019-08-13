@@ -10,6 +10,9 @@ const Navigation = () => (
         <Link to={PATH.SIGN_IN}>Sign In</Link>
       </li>
       <li>
+        <Link to={PATH.SIGN_UP}>Sign Up</Link>
+      </li>
+      <li>
         <Link to={PATH.LANDING}>Landing</Link>
       </li>
       <li>

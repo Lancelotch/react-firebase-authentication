@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import routes from "./constants/routes";
+import uuidv4 from 'uuid/v4'
 
 const App = () => (
   <Router>
@@ -9,7 +10,7 @@ const App = () => (
       <Navigation />
       <hr />
         {routes.map(route => (
-          <Route exact path={route.path} component={route.component} />
+          <Route key={uuidv4()} exact path={route.path} component={route.component} />
         ))}
     </div>
   </Router>
